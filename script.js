@@ -6,7 +6,7 @@ const movesButton = document.getElementById("moves_button");
 const infoButton = document.getElementById("info_button");
 
 let currentId = 1;
-let currentTab = "moves"
+let currentTab = "info"
 let currentPokemon = null;
 
 async function loadPokemon(id) {
@@ -41,15 +41,12 @@ function showPokemon() {
             return m.move.name;
         });
     } else {
-        displayBox.textContent = 
-        "height: " + currentPokemon.height / 10 + " m\n" +
-        "weight: " + currentPokemon.weight / 10 + " kg\n" +
-        "hp: " + currentPokemon.hp + "\n" +
-        "attack: " + currentPokemon.attack + "\n" +
-        "defense: " + currentPokemon.defense + "\n" +
-        "special-attack: " + currentPokemon.special-attack + "\n" +
-        "special-defense: " + currentPokemon.special-defense + "\n" +
-        "speed: " + currentPokemon.speed;
+        const lines = ["height: " + (currentPokemon.height / 10).toFixed(1) + " m", 
+            "weight: " + (currentPokemon.weight / 10).toFixed(1) + " kg"];
+        currentPokemon.stats.forEach(function (s) {
+            lines.push(s.stat.name + ": " + s.base_stat);
+        });
+        displayBox.textContent = lines.join("\n");
     }
 
     movesButton.classList.toggle("active", currentTab === "moves");
