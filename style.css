@@ -42,12 +42,27 @@ h1 {
     font-size: 20px; 
 }
 
-.nav button, .tabs button{
+.nav, .tabs {
+    display: flex;
     width: 173px;
     height: 69px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+button {
+    background-color: #d3d3d3;
+    width: 173px;
+    height: 69px;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #90ee90;
 }
 
 .type_badge {
