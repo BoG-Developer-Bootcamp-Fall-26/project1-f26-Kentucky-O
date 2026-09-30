@@ -6,6 +6,7 @@ const movesButton = document.getElementById("moves_button");
 const infoButton = document.getElementById("info_button");
 const panelTitle = document.getElementById("panel_title");
 
+const MAX_ID = 1025;
 let currentId = 1;
 let currentTab = "info"
 let currentPokemon = null;
@@ -38,10 +39,13 @@ function showPokemon() {
     });
 
     if(currentTab === "moves") {
+        panelTitle.textContent = "Moves";
         const moveNames = currentPokemon.moves.map(function (m) {
             return m.move.name;
         });
+        displayBox.textContent = moveNames.join("\n");
     } else {
+        panelTitle.textContent = "Info";
         const lines = ["height: " + (currentPokemon.height / 10).toFixed(1) + " m", 
             "weight: " + (currentPokemon.weight / 10).toFixed(1) + " kg"];
         currentPokemon.stats.forEach(function (s) {
