@@ -57,8 +57,9 @@ button {
     width: 173px;
     height: 69px;
     border: none;
-    padding: 10px 30px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 32px;
     cursor: pointer;
 }
 
@@ -96,11 +97,65 @@ button.active {
     justify-content: center;
 }
 
+.nav {
+    position: absolute;
+    top: 898px;
+    left: 129px;
+    width: 463px;
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+}
+
+.right {
+    position: absolute;
+    top: 143px;
+    left: 838px;
+    width: 486px;
+    height: 828px;
+}
+
+.right h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#display_box {
+    position: absolute;
+    top: 83px;
+    left: 10px;
+    width: 466px;
+    height: 580px;
+    padding: 30px 32px;
+    background: #d3d3d3;
+    font-size: 32px;
+    line-height: 1.3;
+    white-space: pre-line;
+    overflow-y: auto;
+}
+
+.tabs {
+    position: absolute;
+    top: 735px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 .type_badge {
     display: inline-block;
     padding: 4px 12px;
     margin: 0 4px;
     border-radius: 4px;
+    font-size: 20px;
 }
 
 .type_normal {
