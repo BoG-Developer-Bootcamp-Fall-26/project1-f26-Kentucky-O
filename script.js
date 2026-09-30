@@ -4,6 +4,7 @@ const typesSpan = document.getElementById("item_types");
 const displayBox = document.getElementById("display_box");
 const movesButton = document.getElementById("moves_button");
 const infoButton = document.getElementById("info_button");
+const panelTitle = document.getElementById("panel_title");
 
 let currentId = 1;
 let currentTab = "info"
