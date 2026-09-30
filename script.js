@@ -56,3 +56,30 @@ function showPokemon() {
     infoButton.classList.toggle("active", currentTab === "info");
 }
 
+document.getElementById("next").addEventListener("click", function () {
+    currentId = currentId + 1;
+    if(currentId > MAX_ID) {
+        currentId = 1;
+    }
+    loadPokemon(currentId);
+});
+
+document.getElementById("previous").addEventListener("click", function () {
+    currentId = currentId - 1;
+    if(currentId < 1) {
+        currentId = MAX_ID;
+    }
+    loadPokemon(currentId);
+});
+
+movesButton.addEventListener("click", function () {
+    currentTab = "moves";
+    showPokemon();
+});
+
+infoButton.addEventListener("click", function () {
+    currentTab = "info";
+    showPokemon();
+});
+
+loadPokemon(currentId);
