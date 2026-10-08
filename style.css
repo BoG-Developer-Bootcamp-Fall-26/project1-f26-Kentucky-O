@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: white;
+    outline: 2px solid black;
+    outline-offset: -2px;
+}
+
+#item_image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.name_box {
+    position: absolute;
+    top: 659px;
+    left: 129px;
+    width: 463px;
+    height: 67px;
+    border: 1px solid black;
+    font-size: 32px;
+    background: #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.types {
+    position: absolute;
+    top: 768px;
+    left: 129px;
+    height: 88px;
+}
+
+.types_label {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+button {
+    background-color: #d3d3d3;
+    width: 173px;
+    height: 69px;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #90ee90;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    position: absolute;
+    top: 46px;
+    left: 179px;
+    width: 1083px;
+    height: 77px;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    text-align: center;
+    color: black;
+}
+
+.image_box {
+    position: absolute;
+    top: 165px;
+    left: 129px;
+    width: 463px;
+    height: 463px;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    position: absolute;
+    top: 898px;
+    left: 129px;
+    width: 463px;
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+}
+
+.right {
+    position: absolute;
+    top: 143px;
+    left: 838px;
+    width: 486px;
+    height: 828px;
+}
+
+.right h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#display_box {
+    position: absolute;
+    top: 83px;
+    left: 10px;
+    width: 466px;
+    height: 580px;
+    padding: 30px 32px;
+    background: #d3d3d3;
+    font-size: 32px;
+    line-height: 1.3;
+    white-space: pre-line;
+    overflow-y: auto;
+}
+
+.tabs {
+    position: absolute;
+    top: 735px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.type_badge {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.type_normal {
+    background-color: #A8A77A;
+}
+
+.type_fire {
+    background-color: #EE8130;
+}
+
+.type_water {
+    background-color: #6390F0;
+}
+
+.type_electric {
+    background-color: #F7D02C;
+}
+
+.type_grass {
+    background-color: #7AC74C;
+}
+
+.type_ice {
+    background-color: #96D9D6;
+}
+
+.type_fighting {
+    background-color: #C22E28;
+}
+
+.type_poison {
+    background-color: #A33EA1;
+}
+
+.type_ground {
+    background-color: #E2BF65;
+}
+
+.type_flying {
+    background-color: #A98FF3;
+}
+
+.type_psychic {
+    background-color: #F95587;
+}
+
+.type_bug {
+    background-color: #A6B91A;
+}
+
+.type_rock {
+    background-color: #B6A136;
+}
+
+.type_ghost {
+    background-color: #735797;
+}
+
+.type_dragon {
+    background-color: #6F35FC;
+}
+
+.type_dark {
+    background-color: #705746;
+}
+
+.type_steel {
+    background-color: #B7B7CE;
+}
+
+.type_fairy {
+    background-color: #D685AD;
+}
